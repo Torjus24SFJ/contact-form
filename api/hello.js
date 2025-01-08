@@ -14,6 +14,6 @@ export function GET() {
         <p>Do not drink the coffee!</p>
         `,
     })
+    return new Response('Hello World!')
 }
 
-return new Response('Hello World!')
