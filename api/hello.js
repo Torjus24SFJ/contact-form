@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 const apiKey = process.env.RESEND_API_KEY
 const resend = new Resend(apiKey)
 
-export function GET(request) {
+export function GET() {
     resend.emails.send({
         from: "contact@mypage.no",
         to: "Torjus24sfj@gmail.com",
@@ -15,3 +15,5 @@ export function GET(request) {
         `,
     })
 }
+
+return new Response('Hello World!')
