@@ -5,4 +5,3 @@ export const config = {
 export function GET() {
     return "Hello World!"
 }
-
