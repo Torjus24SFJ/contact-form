@@ -13,7 +13,6 @@ export function GET() {
         <p>Somebody poisoned the coffee</p>
         <p>Do not drink the coffee!</p>
         `,
-    })
+    });
     return new Response('Hello World!')
 }
-
