@@ -5,7 +5,7 @@ if (formElement === null) {
 
 formElement.addEventListener("submit", async(event) => {
     // prevent refresh
-    event.preventdefault();
+    event.preventDefault();
     
     // get input values
     const contactMessage = {
