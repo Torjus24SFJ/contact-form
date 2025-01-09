@@ -16,6 +16,15 @@ export async function POST(request) {
       `,
     });
     
-    // return new Response("Hello World!");
+    if (error !== null){
+        console.log(result.error.email)
+        console.log(result.error.message)
+        return new Response("Something went wrong",{
+            status: "500"
+        })
+    }
 
+    return new Response("Message sent succesfully!", {
+        status: "200"
+    })
 }
