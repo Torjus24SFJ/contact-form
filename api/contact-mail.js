@@ -11,7 +11,7 @@ export async function POST(request) {
 
   // const result = await resend.emails.send({
   //   from: "Lars <contact@resend.dev>",
-  //   to: "lars.gunnar@jobloop.no",
+  //   to: "Torjus24sfj@gmail.com",
   //   subject: "Contact wanted message",
   //   html: `
   //     <h1>Message from somebody</h1>
