@@ -1,5 +1,5 @@
 const formElement = document.querySelector("contact");
-if (formElement !== null) {
+if (formElement === null) {
     throw Error("Hey smartass! The id is wrong!")
 }
 
