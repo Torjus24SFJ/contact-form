@@ -1,25 +1,25 @@
-import { Resend } from 'resend';
+import { Resend } from "resend";
 
 const apiKey = process.env.RESEND_API_KEY;
 const resend = new Resend(apiKey);
 
 export async function POST(request) {
-    const data = await request.json();
-    console.log(request);
-    
+  const data = await request.json();
+  console.log(data);
 
-    // await resend.emails.send({
-    //     from: "contact@mypage.no",
-    //     to: "Torjus24sfj@gmail.com",
-    //     subject: "From the future",
-    //     html: `
-    //     <h1>This is me from the future</h1>
-    //     <p>Somebody poisoned the coffee</p>
-    //     <p>Do not drink the coffee!</p>
-    //     `,
-    // });
+  // console.log("Starting sending mail via resend");
 
-    // console.log(result.error.message)
-    return new Response('Hello World!')
+  // const result = await resend.emails.send({
+  //   from: "Lars <contact@resend.dev>",
+  //   to: "lars.gunnar@jobloop.no",
+  //   subject: "Contact wanted message",
+  //   html: `
+  //     <h1>Message from somebody</h1>
+  //     <p>They said nice things about me</p>
+  //   `,
+  // });
+
+  // console.log(result.error.message);
+
+  return new Response("Hello World!");
 }
-
