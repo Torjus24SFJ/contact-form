@@ -4,6 +4,7 @@ const apiKey = process.env.RESEND_API_KEY;
 const resend = new Resend(apiKey);
 
 export async function POST(request) {
+    const data = await request.json();
     console.log(request);
     
 
