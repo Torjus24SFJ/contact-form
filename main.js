@@ -3,7 +3,7 @@ if (formElement === null) {
     throw Error("Hey smartass! The id is wrong!")
 }
 
-formElement.addEventlistener("submit", async(event) => {
+formElement.addEventListener("submit", async(event) => {
     // prevent refresh
     event.preventdefault();
     
