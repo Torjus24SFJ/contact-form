@@ -24,7 +24,7 @@ formElement.addEventListener("submit", async (event) => {
     formElement.reset();
   }
   else {
-    console.log("Something went wrong", {
+    console.log("Response ok error", {
         status: "500"
     });
   }
